@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
   const so = new ScrollObserver('.clip-js', cb, {
-    rootMargin: '-120px 0px',
+    rootMargin: '-50px 0px',
   });
   // <!-------- /text-animation -------->
   const so2 = new ScrollObserver(
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         el.classList.remove('inview');
       }
     }, {
-      rootMargin: '-80px 0px',
+      rootMargin: '-50px 0px',
     }
   );
   // <!-------- /inview-animation -------->

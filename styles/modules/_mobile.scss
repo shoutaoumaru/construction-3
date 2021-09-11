@@ -177,6 +177,10 @@
       margin-bottom: 25px;
       width: 172px;
 
+      & a {
+        color: $cBlack;
+      }
+
       & span {
         position: relative;
         display: block;

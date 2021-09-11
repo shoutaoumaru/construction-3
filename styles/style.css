@@ -812,7 +812,7 @@ body {
 
 .c-works #works02 {
   padding: 40px 0;
-  background-color: #dde8f4;
+  background-color: #e2eaf3;
 }
 
 .c-recruit__title {
@@ -934,7 +934,7 @@ body {
 
 .c-news .page-numbers:not(.next):not(.prev) .current {
   border: 1px solid rgba(0, 0, 0, 0);
-  background: #dde8f4 !important;
+  background: #e2eaf3 !important;
 }
 
 .c-news .page-numbers:not(.next):not(.prev) .page-numbers:not(.next):not(.prev) {
@@ -1273,6 +1273,10 @@ body {
   display: inline-block;
   margin-bottom: 25px;
   width: 172px;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn a {
+  color: #302f2f;
 }
 
 .mobile-menu .reserve-btn-wrap .reserve-btn span {
@@ -2829,7 +2833,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #eaebe6;
+  background-color: #e2eaf3;
   opacity: 0;
 }
 
