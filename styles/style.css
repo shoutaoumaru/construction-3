@@ -775,7 +775,7 @@ body {
   width: 100%;
 }
 
-.c-company .c-about__desc td span {
+.c-company .c-about__desc td a {
   color: #302f2f;
 }
 
