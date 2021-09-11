@@ -775,6 +775,10 @@ body {
   width: 100%;
 }
 
+.c-company .c-about__desc td span {
+  color: #302f2f;
+}
+
 .c-company .c-about__desc th,
 .c-company .c-about__desc td {
   padding: 8px 16px;
@@ -1091,7 +1095,7 @@ body {
 
 .p-header .logo__img {
   display: inline-block;
-  margin: 9px 10px 0 20px;
+  margin: 9px 10px 0 10px;
 }
 
 .p-header .logo {

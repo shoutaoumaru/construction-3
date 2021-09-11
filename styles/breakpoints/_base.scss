@@ -644,6 +644,10 @@ body {
       & td {
         display: block;
         width: 100%;
+
+        & span {
+          color: $cBlack;
+        }
       }
 
       & th,
