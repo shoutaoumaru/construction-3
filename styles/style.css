@@ -197,8 +197,8 @@ Stylesheet: ベーススタイル
 ******************************************************************/
 body {
   color: #302f2f;
-  font-family: 'Cormorant Infant', serif;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Cormorant Infant", serif;
+  font-family: "Noto Serif JP", serif;
   letter-spacing: 1px;
 }
 
@@ -221,11 +221,11 @@ body {
   position: absolute;
   top: 7px;
   right: 0;
-  content: '';
+  content: "";
   display: inline-block;
   height: 20px;
   width: 40px;
-  background-image: url(/images/common/arrow-blue.png);
+  background-image: url(../images/common/arrow-blue.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -240,51 +240,51 @@ body {
 }
 
 .link-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   right: -8px;
   width: 48px;
   height: 1px;
   background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .link-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -8px;
   right: -2px;
   width: 1px;
   height: 48px;
   background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .link-btn span::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: -8px;
   width: 48px;
   height: 1px;
   background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .link-btn span::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -8px;
   left: -2px;
   width: 1px;
   height: 48px;
   background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .link-btn:active,
@@ -297,32 +297,32 @@ body {
 .link-btn:hover::before {
   width: 88px;
   background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .link-btn:active::after,
 .link-btn:hover::after {
   height: 88px;
   background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .link-btn:active span::before,
 .link-btn:hover span::before {
   width: 88px;
   background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .link-btn:active span::after,
 .link-btn:hover span::after {
   height: 88px;
   background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .icon-tel {
@@ -330,7 +330,7 @@ body {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -343,7 +343,7 @@ body {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -356,9 +356,9 @@ body {
 }
 
 .icon-map::before {
-  content: '';
+  content: "";
   display: block;
-  background-image: url(/images/common/icon-map.png);
+  background-image: url(../images/common/icon-map.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -375,11 +375,11 @@ body {
 }
 
 .icon-insta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -398,7 +398,7 @@ body {
 }
 
 .c-topview__img::before {
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
@@ -428,7 +428,7 @@ body {
 }
 
 .c-topview::before {
-  content: 'scroll';
+  content: "scroll";
   height: 20px;
   display: block;
   position: absolute;
@@ -443,7 +443,7 @@ body {
 }
 
 .c-topview::after {
-  content: '';
+  content: "";
   width: 1px;
   display: block;
   position: absolute;
@@ -463,7 +463,7 @@ body {
 }
 
 .top-view::before {
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
@@ -480,7 +480,7 @@ body {
 }
 
 .top-view .hero::before {
-  content: 'scroll';
+  content: "scroll";
   height: 20px;
   display: block;
   position: absolute;
@@ -495,7 +495,7 @@ body {
 }
 
 .top-view .hero::after {
-  content: '';
+  content: "";
   width: 1px;
   display: block;
   position: absolute;
@@ -582,7 +582,7 @@ body {
 
 .p-feature {
   position: relative;
-  background-image: url(/images/home/bg-feature.jpg);
+  background-image: url(../images/home/bg-feature.jpg);
   background-size: cover;
   background-position: center;
   padding: 50px 0;
@@ -676,7 +676,7 @@ body {
 
 .p-contact__wrap {
   padding: 30px;
-  background-image: url(/images/home/bg-feature.jpg);
+  background-image: url(../images/home/bg-feature.jpg);
   background-size: cover;
   text-align: center;
 }
@@ -824,7 +824,7 @@ body {
 }
 
 .c-recruit .recruit-message {
-  background-image: url(/images/home/bg_recruit.jpg);
+  background-image: url(../images/home/bg_recruit.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -945,7 +945,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -963,7 +963,7 @@ body {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1006,7 +1006,7 @@ body {
 
 .c-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__title {
@@ -1040,7 +1040,7 @@ body {
 .c-news-sl__link {
   margin: 0 0 10vw 0;
   text-align: right;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link a {
@@ -1099,7 +1099,7 @@ body {
 }
 
 .p-header .logo {
-  background-image: url(/images/common/riv_logo_02.png);
+  background-image: url(../images/common/riv_logo_02.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1109,7 +1109,7 @@ body {
 }
 
 .p-header .logo.inview {
-  background-image: url(/images/common/riv_logo_02.png);
+  background-image: url(../images/common/riv_logo_02.png);
 }
 
 .p-header .mobile-button {
@@ -1130,7 +1130,7 @@ body {
   bottom: 0;
   left: 0;
   background-color: #fff;
-  opacity: .7;
+  opacity: 0.7;
   height: 10vh;
   width: 100%;
   z-index: 2000;
@@ -1297,14 +1297,14 @@ body {
 }
 
 .mobile-menu .reserve-btn-wrap .reserve-btn-net span::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 12px;
   right: 5px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1314,14 +1314,14 @@ body {
 }
 
 .mobile-menu .reserve-btn-wrap .reserve-btn-tel span::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 13px;
   right: 10px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1373,7 +1373,7 @@ body {
   right: 20%;
   height: 20px;
   width: 20px;
-  background-image: url(/images/tel-gray.png);
+  background-image: url(../images/tel-gray.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1384,7 +1384,7 @@ body {
 .mobile-container .mobile-ico.inview {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(/images/tel-white.png);
+  background-image: url(../images/tel-white.png);
 }
 
 .mobile-container .mobile-ico a {
@@ -1399,7 +1399,7 @@ body {
   left: 5%;
   height: 43px;
   width: 138px;
-  background-image: url(/images/riv_logo-gray.png);
+  background-image: url(../images/riv_logo-gray.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1410,7 +1410,7 @@ body {
 .mobile-container .mobile-logo.inview {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(/images/riv_logo-white.png);
+  background-image: url(../images/riv_logo-white.png);
 }
 
 .mobile-container .mobile-button {
@@ -2830,7 +2830,7 @@ body {
 }
 
 .cover-slide::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 2;
   top: 0;
@@ -2979,7 +2979,7 @@ body {
 }
 
 .hover-darken::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -3010,7 +3010,7 @@ body {
 }
 
 .bg-img-zoom {
-  background-image: url(images/image-1.jpg);
+  background-image: url(../images/image-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3023,7 +3023,7 @@ body {
 
 .img-bg50::before {
   display: block;
-  content: '';
+  content: "";
   padding-top: 50%;
 }
 

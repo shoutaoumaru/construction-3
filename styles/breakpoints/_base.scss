@@ -6,8 +6,8 @@ Stylesheet: ベーススタイル
 
 body {
   color: $cBlack;
-  font-family: 'Cormorant Infant', serif;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Cormorant Infant", serif;
+  font-family: "Noto Serif JP", serif;
   letter-spacing: 1px;
 }
 
@@ -28,11 +28,11 @@ body {
       position: absolute;
       top: 7px;
       right: 0;
-      content: '';
+      content: "";
       display: inline-block;
       height: 20px;
       width: 40px;
-      background-image: url(/images/common/arrow-blue.png);
+      background-image: url(../images/common/arrow-blue.png);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -48,49 +48,48 @@ body {
   background-color: #eef3f9;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     right: -8px;
     width: 48px;
     height: 1px;
     background-color: $cBlue;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -8px;
     right: -2px;
     width: 1px;
     height: 48px;
     background-color: $cBlue;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
   }
 
   & span {
-
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -2px;
       left: -8px;
       width: 48px;
       height: 1px;
       background-color: $cBlue;
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -8px;
       left: -2px;
       width: 1px;
       height: 48px;
       background-color: $cBlue;
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
     }
   }
 }
@@ -103,26 +102,26 @@ body {
   &::before {
     width: 88px;
     background-color: $cBlue;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
   }
 
   &::after {
     height: 88px;
     background-color: $cBlue;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
   }
 
   & span {
     &::before {
       width: 88px;
       background-color: $cBlue;
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
     }
 
     &::after {
       height: 88px;
       background-color: $cBlue;
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
     }
   }
 }
@@ -132,7 +131,7 @@ body {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -145,7 +144,7 @@ body {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -157,16 +156,15 @@ body {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
-    background-image: url(/images/common/icon-map.png);
+    background-image: url(../images/common/icon-map.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 17px;
     width: 17px;
   }
-
 }
 
 .icon-insta {
@@ -177,11 +175,11 @@ body {
   padding-bottom: 5px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/images/common/icon-insta-gr.png);
+    background-image: url(../images/common/icon-insta-gr.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -200,7 +198,7 @@ body {
     height: 30vh;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       height: 100%;
       width: 100%;
@@ -230,7 +228,7 @@ body {
   }
 
   &::before {
-    content: 'scroll';
+    content: "scroll";
     height: 20px;
     display: block;
     position: absolute;
@@ -245,7 +243,7 @@ body {
   }
 
   &::after {
-    content: '';
+    content: "";
     width: 1px;
     display: block;
     position: absolute;
@@ -255,19 +253,25 @@ body {
     width: 1px;
     height: 40px;
     margin: 0 auto;
-    background: linear-gradient(180deg, #fff 0%, #fff 50%, #548ac7 50%, #548ac7 100%);
+    background: linear-gradient(
+      180deg,
+      #fff 0%,
+      #fff 50%,
+      #548ac7 50%,
+      #548ac7 100%
+    );
     z-index: 4000;
   }
 }
 
-//* * * * * * ホーム * * * * * * * 
+//* * * * * * ホーム * * * * * * *
 //.topview
 .top-view {
   position: relative;
   @extend .mb-md;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     height: 100%;
     width: 100%;
@@ -283,7 +287,7 @@ body {
     position: relative;
 
     &::before {
-      content: 'scroll';
+      content: "scroll";
       height: 20px;
       display: block;
       position: absolute;
@@ -298,7 +302,7 @@ body {
     }
 
     &::after {
-      content: '';
+      content: "";
       width: 1px;
       display: block;
       position: absolute;
@@ -308,7 +312,13 @@ body {
       width: 1px;
       height: 40px;
       margin: 0 auto;
-      background: linear-gradient(180deg, #fff 0%, #fff 50%, #548ac7 50%, #548ac7 100%);
+      background: linear-gradient(
+        180deg,
+        #fff 0%,
+        #fff 50%,
+        #548ac7 50%,
+        #548ac7 100%
+      );
       z-index: 4000;
     }
 
@@ -329,13 +339,13 @@ body {
       }
     }
 
-    @media (max-width:599px) {
+    @media (max-width: 599px) {
       .view-pc {
         display: none;
       }
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       .view-sp {
         display: none;
       }
@@ -343,9 +353,8 @@ body {
   }
 }
 
-//.p-message 
+//.p-message
 .p-message {
-
   &__title {
     text-align: center;
     @extend .mb-sm;
@@ -383,7 +392,7 @@ body {
 //.p-feature
 .p-feature {
   position: relative;
-  background-image: url(/images/home/bg-feature.jpg);
+  background-image: url(../images/home/bg-feature.jpg);
   background-size: cover;
   background-position: center;
   padding: 50px 0;
@@ -409,12 +418,12 @@ body {
     box-shadow: 5px 5px 50px rgb(65, 65, 65);
 
     & h3 {
-      text-align: center
+      text-align: center;
     }
   }
 }
 
-//.p-service 
+//.p-service
 .p-service {
   .c-container {
     @extend .mb-md;
@@ -517,7 +526,7 @@ body {
 
   &__wrap {
     padding: 30px;
-    background-image: url(/images/home/bg-feature.jpg);
+    background-image: url(../images/home/bg-feature.jpg);
     background-size: cover;
     text-align: center;
   }
@@ -542,7 +551,7 @@ body {
   }
 }
 
-//.p-footer 
+//.p-footer
 .p-footer {
   padding: 40px 0;
 
@@ -588,7 +597,7 @@ body {
   }
 }
 
-//* * * * * * 会社概要 * * * * * * * 
+//* * * * * * 会社概要 * * * * * * *
 .c-company {
   .c-policy {
     @extend .mb-md;
@@ -691,7 +700,7 @@ body {
   }
 }
 
-//* * * * * * 実績紹介 * * * * * * * 
+//* * * * * * 実績紹介 * * * * * * *
 .c-works {
   &-item {
     @extend .mb-md;
@@ -716,16 +725,14 @@ body {
   }
 }
 
-//* * * * * * 採用情報 * * * * * * * 
+//* * * * * * 採用情報 * * * * * * *
 .c-recruit {
-
   &__title {
     text-align: center;
     @extend .mb-md;
   }
 
   &__points {
-
     & li {
       @extend .mb-md;
     }
@@ -734,7 +741,7 @@ body {
   .recruit-message {
     @extend .mb-md;
 
-    background-image: url(/images/home/bg_recruit.jpg);
+    background-image: url(../images/home/bg_recruit.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -799,13 +806,12 @@ body {
     }
   }
 
-  @media (max-width:599px) {
+  @media (max-width: 599px) {
     th {
       color: $cBlack;
       margin-bottom: 5px;
     }
   }
-
 
   .points-title {
     .c-txt-lg {
@@ -815,7 +821,7 @@ body {
   }
 }
 
-//* * * * * * news-page * * * * * * * 
+//* * * * * * news-page * * * * * * *
 .c-news {
   padding: 0 0 10vw 0;
   letter-spacing: 3px;
@@ -835,7 +841,6 @@ body {
       margin-top: 2vw;
       color: $cBlack;
     }
-
   }
 
   &__date {
@@ -869,7 +874,7 @@ body {
       width: 40px;
       height: 40px;
       border-radius: 100%;
-      border: 1px solid #C4CCD1;
+      border: 1px solid #c4ccd1;
       background: #fff;
       margin: 0 1.3vw;
     }
@@ -885,7 +890,7 @@ body {
         content: "";
         position: absolute;
         right: 0;
-        background-image: url(/images/common/arrow.png);
+        background-image: url(../images/common/arrow.png);
         background-position: right center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -894,16 +899,15 @@ body {
         height: 12px;
         margin-left: 8px;
       }
-
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       & .next {
         display: none;
       }
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 45px;
         height: 45px;
@@ -914,7 +918,7 @@ body {
       }
     }
 
-    @media (min-width:900px) {
+    @media (min-width: 900px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 55px;
         height: 55px;
@@ -934,7 +938,7 @@ body {
 
   &__contents {
     line-height: 2;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   &__title {
@@ -949,9 +953,8 @@ body {
   }
 }
 
-//* * * * * * news-single-page * * * * 
+//* * * * * * news-single-page * * * *
 .c-news-sl {
-
   & .c-container {
     padding: 5vw 5vw 0 5vw;
   }
@@ -972,14 +975,12 @@ body {
   &__link {
     margin: 0 0 10vw 0;
     text-align: right;
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     & a {
       display: inline-block;
       padding-bottom: 5px;
       border-bottom: 1px solid rgb(114, 114, 114);
-      ;
-
       & span {
         color: $cBlack;
       }
