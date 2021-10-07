@@ -6,12 +6,12 @@
 .swiper-slide {
   overflow: hidden;
 
-  &-active {
+  // &-active {
 
-    & img {
-      animation: zoom 6.5s forwards;
-    }
-  }
+  //   & img {
+  //     animation: zoom 6.5s forwards;
+  //   }
+  // }
 }
 
 @keyframes zoom {

@@ -219,8 +219,10 @@ body {
 
 .readmore span::after {
   position: absolute;
-  top: 7px;
+  top: 0;
   right: 0;
+  bottom: 0;
+  margin: auto;
   content: '';
   display: inline-block;
   height: 20px;
@@ -231,98 +233,106 @@ body {
   background-repeat: no-repeat;
 }
 
-.link-btn {
-  position: relative;
-  color: #347eaf;
+.link-btn-wrap {
+  text-align: center;
+}
+
+.link-btn-wrap .link-btn {
   display: inline-block;
-  padding: 14px 40px 14px;
-  background-color: #eef3f9;
 }
 
-.link-btn::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  right: -8px;
-  width: 48px;
-  height: 1px;
-  background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+.link-btn-wrap .link-btn .btn,
+.link-btn-wrap .link-btn a.btn,
+.link-btn-wrap .link-btn button.btn {
+  font-size: 1rem;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  color: #212529;
 }
 
-.link-btn::after {
-  content: '';
-  position: absolute;
-  top: -8px;
-  right: -2px;
-  width: 1px;
-  height: 48px;
-  background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+.link-btn-wrap .link-btn .btn.btn-flat,
+.link-btn-wrap .link-btn a.btn.btn-flat,
+.link-btn-wrap .link-btn button.btn.btn-flat {
+  overflow: hidden;
+  padding: 1.5rem 4rem;
+  color: #347eaf;
+  background: #eef3f9;
 }
 
-.link-btn span::before {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: -8px;
-  width: 48px;
-  height: 1px;
-  background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+.link-btn-wrap .link-btn .btn.btn-flat span,
+.link-btn-wrap .link-btn a.btn.btn-flat span,
+.link-btn-wrap .link-btn button.btn.btn-flat span {
+  position: relative;
+  z-index: 1;
 }
 
-.link-btn span::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: -2px;
-  width: 1px;
-  height: 48px;
-  background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
-}
-
-.link-btn:active,
-.link-btn:hover {
+.link-btn-wrap .link-btn .btn.btn-flat:hover,
+.link-btn-wrap .link-btn a.btn.btn-flat:hover,
+.link-btn-wrap .link-btn button.btn.btn-flat:hover {
   color: #fff;
-  background-color: #347eaf;
 }
 
-.link-btn:active::before,
-.link-btn:hover::before {
-  width: 88px;
-  background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+.link-btn-wrap .link-btn .btn.btn-flat:hover::before,
+.link-btn-wrap .link-btn a.btn.btn-flat:hover::before,
+.link-btn-wrap .link-btn button.btn.btn-flat:hover::before {
+  -webkit-transform: rotate(45deg) translateX(0) translateY(-50%);
+          transform: rotate(45deg) translateX(0) translateY(-50%);
 }
 
-.link-btn:active::after,
-.link-btn:hover::after {
-  height: 88px;
-  background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+.link-btn-wrap .link-btn .btn.btn-flat:hover::after,
+.link-btn-wrap .link-btn a.btn.btn-flat:hover::after,
+.link-btn-wrap .link-btn button.btn.btn-flat:hover::after {
+  -webkit-transform: rotate(45deg) translateX(0) translateY(50%);
+          transform: rotate(45deg) translateX(0) translateY(50%);
 }
 
-.link-btn:active span::before,
-.link-btn:hover span::before {
-  width: 88px;
-  background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+.link-btn-wrap .link-btn .btn.btn-flat::before,
+.link-btn-wrap .link-btn a.btn.btn-flat::before,
+.link-btn-wrap .link-btn button.btn.btn-flat::before {
+  position: absolute;
+  top: 0;
+  left: calc(-150% + 50px);
+  width: 150%;
+  height: 500%;
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: rotate(45deg) translateX(0) translateY(0);
+          transform: rotate(45deg) translateX(0) translateY(0);
+  background: #347eaf;
 }
 
-.link-btn:active span::after,
-.link-btn:hover span::after {
-  height: 88px;
-  background-color: #347eaf;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+.link-btn-wrap .link-btn .btn.btn-flat::after,
+.link-btn-wrap .link-btn a.btn.btn-flat::after,
+.link-btn-wrap .link-btn button.btn.btn-flat::after {
+  position: absolute;
+  top: -400%;
+  right: calc(-150% + 50px);
+  width: 150%;
+  height: 500%;
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: rotate(45deg) translateX(0) translateY(0);
+          transform: rotate(45deg) translateX(0) translateY(0);
+  background: #347eaf;
+}
+
+.link-btn-wrap .link-btn #contactBtn::before {
+  left: calc(-130% + 50px);
+}
+
+.link-btn-wrap .link-btn #contactBtn::after {
+  right: calc(-130% + 50px);
 }
 
 .icon-tel {
@@ -554,7 +564,7 @@ body {
   height: auto;
 }
 
-.p-message__wrap {
+.p-message__img-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,21 +572,8 @@ body {
       flex-wrap: wrap;
 }
 
-.p-message__img-right {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  width: 50%;
-}
-
-.p-message__img-left {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-  width: 50%;
-}
-
 .p-message__img-item {
+  width: 50%;
   height: 150px;
 }
 
@@ -1060,11 +1057,6 @@ body {
 
 .swiper-slide {
   overflow: hidden;
-}
-
-.swiper-slide-active img {
-  -webkit-animation: zoom 6.5s forwards;
-          animation: zoom 6.5s forwards;
 }
 
 @-webkit-keyframes zoom {
@@ -3038,25 +3030,18 @@ body {
     height: 60vh;
   }
   .p-message__desc {
-    padding-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-bottom: 0;
-    width: 70%;
   }
-  .p-message__img-right {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .p-message__img-left {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .p-message__img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .p-message__img-item {
     height: 170px;
+    width: 25%;
   }
   .p-feature__list {
     display: -webkit-box;
