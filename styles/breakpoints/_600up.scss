@@ -16,22 +16,19 @@
 //.p-message
 .p-message {
   &__desc {
-    padding-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-bottom: 0;
-    width: 70%;
   }
 
-  &__img-right {
-    flex: 1;
-  }
+  &__img-box {
+    display: flex;
 
-  &__img-left {
-    flex: 1;
-    order: 1;
   }
 
   &__img-item {
     height: 170px;
+    width: 25%;
   }
 }
 

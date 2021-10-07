@@ -135,17 +135,6 @@
       <!-- /.top-view -->
       <section class="p-message">
         <div class="p-message__wrap appear up">
-          <div class="p-message__img-left item">
-            <div class="p-message__img-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_1.jpg" alt="制作事例">
-            </div>
-            <div class="p-message__img-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_2.jpg" alt="制作事例">
-            </div>
-            <div class="p-message__img-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_3.jpg" alt="制作事例">
-            </div>
-          </div>
           <div class="p-message__desc item">
             <h2 class="p-message__title">
               <p class="c-txt-lg">
@@ -158,15 +147,18 @@
               </p>
             </div>
           </div>
-          <div class="p-message__img-right item">
+          <div class="p-message__img-box item">
+            <div class="p-message__img-item">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_1.jpg" alt="制作事例">
+            </div>
+            <div class="p-message__img-item">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_2.jpg" alt="制作事例">
+            </div>
             <div class="p-message__img-item">
               <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_4.jpg" alt="制作事例">
             </div>
             <div class="p-message__img-item">
               <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_5.jpg" alt="制作事例">
-            </div>
-            <div class="p-message__img-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_6.jpg" alt="制作事例">
             </div>
           </div>
         </div>
@@ -216,7 +208,7 @@
               </p>
             </div>
             <div class="readmore item">
-              <a href="/company/company.html" class="readmore__link animsition-link">
+              <a href="<?php echo esc_url( home_url('/company')); ?>" class="readmore__link animsition-link">
                 <span class="c-txt-sm">Read more</span></a>
             </div>
           </div>
@@ -237,7 +229,7 @@
               </p>
             </div>
             <div class="readmore item">
-              <a href="/company/company.html" class="readmore__link animsition-link">
+              <a href="<?php echo esc_url( home_url('/works')); ?>" class="readmore__link animsition-link">
                 <span class="c-txt-sm">Read more</span></a>
             </div>
           </div>
@@ -258,9 +250,10 @@
               株式会社Riv建設は、通年で中途採用を実施しています。<br>これまでの経験を生かして活躍したい方や、<br>新たなフィールドで知識や技術を身につけたい方のエントリーをお待ちしています
             </p>
           </div>
-          <div class="p-recruit__btn item">
-            <a class="link-btn" href="/recruit/recruit.html">
-              <span class="c-txt-md">採用情報を詳しく見る</span></a>
+          <div class="link-btn-wrap">
+            <div class="link-btn">
+              <a href="<?php echo esc_url( home_url('/recruit')); ?>" class="btn btn-flat"><span>採用情報一覧</span></a>
+            </div>
           </div>
         </div>
       </section>
@@ -283,9 +276,10 @@
             <?php endwhile; ?>
             <?php endif; ?>
           </ul>
-          <div class="p-news__btn item">
-            <a class="link-btn animsition-links" href="/news/news.html">
-              <span class="c-txt-md">お知らせ一覧</span></a>
+          <div class="link-btn-wrap">
+            <div class="link-btn">
+              <a href="<?php echo esc_url( home_url('/news')); ?>" class="btn btn-flat"><span>お知らせ一覧</span></a>
+            </div>
           </div>
         </div>
       </section>
@@ -312,9 +306,10 @@
           <div class="p-contact__tel item">
             <a href="tel:050-3786-1317">Tel:050-3786-1317</a>
           </div>
-          <div class="p-contact__form item">
-            <a class="link-btn" href="/contact/contact.html">
-              <span class="c-txt-md">お問い合わせフォーム</span></a>
+          <div class="link-btn-wrap">
+            <div class="link-btn">
+              <a id="contactBtn" href="<?php echo esc_url( home_url('#')); ?>" class="btn btn-flat"><span>お問い合わせフォーム</span></a>
+            </div>
           </div>
         </div>
       </section>
