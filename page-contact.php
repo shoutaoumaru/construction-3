@@ -10,50 +10,7 @@
 </head>
 <body>
   <div class="superwrapper">
-    <header id="header" class="p-header">
-      <div class="mobile-container">
-        <div class=" logo__img">
-          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
-            <div class="logo"></div>
-          </a>
-        </div>
-        <div class="mobile-button">
-          <button class="mobile-menu__btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-      <!-- /.mobile-container -->
-      <div class="pc-container">
-        <div class=" logo__img">
-          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
-            <div class="logo-pc logo"></div>
-          </a>
-        </div>
-        <nav class="pc-nav">
-          <ul class="pc-nav-list">
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/company')); ?>"><span>会社概要</span>
-                <small>Company</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/works')); ?>"><span>事業案内</span><small>Works</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link"
-                href=" <?php echo esc_url( home_url('/recruit')); ?>"><span>採用情報</span><small>Recruit</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>"><span>お知らせ</span><small>News</small></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- /.pc-container -->
-    </header>
-    <!-- /.header -->
+    <?php get_template_part('includes/c-header'); ?>      
     <section class="c-topview">
       <div class="c-topview__img">
           <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_2.jpg" alt="">
@@ -65,8 +22,7 @@
           </h2>
       </div>
     </section>
-      <!-- /.c-topview -->
-      <!-- コンタクトフォーム -->
+    <!-- /.c-topview -->
     <div class="c-contact">
       <div class="contact-form">
           <div class="c-container">
@@ -114,8 +70,8 @@
       </div>
     </div>
     <!-- /.c-contsact -->
+    <?php get_footer(); ?>
   </div>
   <!-- /.superwrapper -->
-  <?php get_template_part('includes/c-footer'); ?>
 </body>
 </html>

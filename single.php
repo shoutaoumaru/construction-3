@@ -2,62 +2,14 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お知らせ詳細 | 建設業テンプレート1</title>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css">
+  <?php get_header(); ?>
+
 </head>
 
 <body>
   <div id="main-wrapper" class="news-wrapper animsition">
-    <header id="header" class="p-header">
-      <div class="mobile-container">
-        <div class=" logo__img">
-          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
-            <div class="logo"></div>
-          </a>
-        </div>
-        <div class="mobile-button">
-          <button class="mobile-menu__btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-      <!-- /.mobile-container -->
-      <div class="pc-container">
-        <div class=" logo__img">
-          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
-            <div class="logo-pc logo"></div>
-          </a>
-        </div>
-        <nav class="pc-nav">
-          <ul class="pc-nav-list">
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/company')); ?>"><span>会社概要</span>
-                <small>Company</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/works')); ?>"><span>事業案内</span><small>Works</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link"
-                href=" <?php echo esc_url( home_url('/recruit')); ?>"><span>採用情報</span><small>Recruit</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>"><span>お知らせ</span><small>News</small></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- /.pc-container -->
-    </header>
-    <!-- /.header -->
+  <?php get_template_part('includes/c-header'); ?>      
     <section class="c-topview">
       <div class="c-topview__img">
         <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_4.jpg" alt="">
@@ -90,10 +42,7 @@
       </div>
     </section>
     <!-- /.news-top -->
-    <?php get_template_part('includes/c-footer'); ?>      
-    <!-- /.footer -->
-    <?php get_template_part('includes/c-header'); ?>      
-    <!-- /.mobile-menu -->
+    <?php get_footer(); ?>
   </div>
   <!-- .superwrapper -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
