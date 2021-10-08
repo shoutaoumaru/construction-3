@@ -32,3 +32,4 @@
         <div class="copyright">&copy;2021 Riv建設</div>
       </div>
     </footer>
+  <?php wp_footer(); ?>
