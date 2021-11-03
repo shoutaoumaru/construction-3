@@ -28,8 +28,12 @@
     z-index: 3000;
   }
 
-  @media (max-width:600px) {
+  @media (max-width:599px) {
     .pc-container {
+      display: none;
+    }
+
+    .mobile-menu {
       display: none;
     }
   }
