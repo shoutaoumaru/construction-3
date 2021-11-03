@@ -1355,8 +1355,11 @@ body {
   z-index: 3000;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .p-header .pc-container {
+    display: none;
+  }
+  .p-header .mobile-menu {
     display: none;
   }
 }
